@@ -2,26 +2,22 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://yourdomain.com/welcome-to-jekyll</loc>
-        <lastmod>2014-10-02T13:48:12-07:00</lastmod>
-    </url>
-    <url>
-        <loc>http://yourdomain.com/test-post</loc>
-        <lastmod>2014-10-02T13:48:12-07:00</lastmod>
+        <lastmod>2014-10-21T00:10:39-07:00</lastmod>
     </url>
     <url>
         <loc>http://yourdomain.com/404.html</loc>
-        <lastmod>2014-10-02T13:48:53-07:00</lastmod>
+        <lastmod>2014-10-21T00:10:39-07:00</lastmod>
     </url>
     <url>
         <loc>http://yourdomain.com/about/</loc>
-        <lastmod>2014-10-02T13:48:53-07:00</lastmod>
+        <lastmod>2014-10-21T00:10:39-07:00</lastmod>
     </url>
     <url>
         <loc>http://yourdomain.com/</loc>
-        <lastmod>2014-10-02T16:08:15-07:00</lastmod>
+        <lastmod>2014-10-21T00:10:39-07:00</lastmod>
     </url>
     <url>
         <loc>http://yourdomain.com/assets/css/style.css</loc>
-        <lastmod>2014-10-02T12:57:25-07:00</lastmod>
+        <lastmod>2014-10-17T15:25:12-07:00</lastmod>
     </url>
 </urlset>

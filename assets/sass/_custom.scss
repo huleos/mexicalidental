@@ -1,0 +1,27 @@
+//
+// Your custom SCSS should be written here...
+// --------------------------------------------------
+
+// Colors
+$brand-color-primary:      #0092b2 !default;
+$brand-color-secundary:    #229ebd !default;
+$brand-color-tertiary:     #00c1bc !default;
+
+// Grid
+.last{
+	float: right !important;
+}
+
+.header-top{
+	border-top: 5px solid $brand-color-primary;
+	.nav-brand{
+		padding: 1rem 0;
+	}
+
+	.banner-header{
+		display: block;
+		float: right;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+}

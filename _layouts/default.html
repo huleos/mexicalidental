@@ -1,18 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+   {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+   <meta name="author" content="/humans.txt">
+   <meta name="viewport" content="width=device-width initial-scale=1" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Favicon -->
+   <link rel="shortcut icon" href="{{ ASSET_PATH }}/assets/img/favicon.png">
+   <!-- Styles -->
+   <link rel="stylesheet" href="{{ ASSET_PATH }}/assets/css/style.css">
+   <!-- Modernizr -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<!-- Canonical -->
+   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+</head>
+<body>
 
-  {% include head.html %}
+	<!-- Header Content -->
+	<header>
+		<!-- Header -->
+		<div class="header-top">
+			<div class="row">
+				<div class="col lg-3 md-4">
+					<a href="{{ page.url }}" class="nav-brand">
+						<img src="{{ ASSET_PATH }}/assets/img/mexicali-dental.png" alt="">
+					</a>
+				</div>
+				<div class="col lg-7 md-8 last">
+					<!-- Banner Header -->
+		      <a href="" class="banner-header">
+		        <img src="http://placehold.it/640x90" alt="">
+		      </a>
+		      <!-- /Banner Header -->
+				</div>
+			</div>
+		</div>
+		<!-- Header -->
 
-  <body>
+		<!-- Navigation -->
+		<nav class="nav navbar">
+			<div class="row">
+				<ul class="">
+					{% assign pages_list = site.pages %}
+					{% assign group = 'navigation' %}
+				  {% include pages_list %}
+				</ul>
+			</div>
+		</nav>
+		<!-- /Navigation -->
+	</header>
+	<!-- /Header Content -->
 
-    {% include header.html %}
+  <div class="row">
+  	<div class="col md-12">
+  		{{content}}
+  	</div>
+  </div>
 
-      <div class="container">
-        {{ content }}
-      </div>
-
-    {% include footer.html %}
-
-  </body>
-
+	
+	<footer>
+	    <div class="row">
+	    <hr>
+	      <div class="col md-12">
+	        <p class="text-center">&copy; {{ site.time | date: '%Y' }} {{ site.author.name }} with help from <a href="http://jcmontenegro.me" target="_blank">Julio Cesar Montenegro</a> and <a href="https://huleos.github.io/lightcss/" target="_blank">LightCss</a>
+	    		</p>
+	      </div>
+	    </div>
+	</footer>
+	
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write("<script src=\"assets/js/vendor/jquery.min.js\"><\/script>")</script>
+	<!-- Scripts -->
+	<script src="{{ ASSET_PATH }}/assets/js/main.js"></script>
+</body>
 </html>
